@@ -16,7 +16,7 @@ carros = []
 while  True:
     marca = input("digite a marca do carro ou clickr 'sair' pra sair")
 
-    if marca.lower == "sair":
+    if marca.lower() == "sair":
         print("adeus...")
         break
 
