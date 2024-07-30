@@ -1,16 +1,12 @@
-def calcular_media_notas(notas):
-    if len(notas) == 0:
-        return 0
-    return sum(notas / notas)
+nota_1 = float(input("Digite a nota do Primeiro bimestre:"))
+nota_2 = float(input("Digite a nota do Seguno bimestre:"))
+nota_3 = float(input("Digite a nota do Terceiro bimestre:"))
+nota_4 = float(input("Digite a nota do Quarto bimestre:"))
 
-notas = []
+media = (nota_1 + nota_2 + nota_3 + nota_4) / 4
+print("A media final é :",media)
 
-num_notas = int(input(f"Digite o numero de notas:  "))
-
-for i in range(num_notas):
-    nota = float(input(f"Digite a nota {i + 1}"))
-    nota.append(nota)
-
-    media = calcular_media_notas(notas)
-
-    print(f"A media de notas é: {media:.2f}")
+if media >= 6:
+    print("Aprovado")
+else:
+    print("Reprovado")
